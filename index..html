@@ -1,0 +1,356 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a href="#" class="logo">&#9771;</a>
+<span class="animate"></span>
+<div class="menu-icon" onclick="toggleMenu()">&#9778;</div>
+<nav class="mav" id="nav">
+<a href="#">Home</a>
+<a href="#About">About</a>
+<a href="#Contact">Contact</a>
+<a href="#">Updates</a>
+<span class="animate"></span>
+</nav>
+</header>
+<hero>
+<div class="container">
+<h2>hello everyone<br> welcome to Afinaar<br> exchange platform</h2><br>
+<p>your trusted exchange platform<p>
+</div>
+</hero>
+
+
+
+<section id="About" class="About-page">
+<div class="container">
+<h3>About us</h3>
+<p>we are money exchangers welcome to our<br> exchange platform.<br>
+send and receive now fast & easy
+you can find<br> Achansy.com payments you love
+If you see any<br> problems you can click the button below<br> and then send us a message</p>
+</div>
+</section>
+<section id="Contact" class="Contact-page">
+<form>
+<h3>Contcat with us</h3>
+<div class="form">
+<input type="text" name="name" placeholder="Name" required><br>
+<input type="email" name="email" placeholder="E-mail" required><br>
+<textarea id="message" placeholder="your message here--------" required></textarea><br>
+<button type="submit">Send &#8594;</button>
+</div>
+</form>
+</section>
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="logo">
+          <span>AFIN</span><span>AAR</span>
+        </div>
+        <p>this our exchange<br>platform</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>pages</h3>
+        <a href="#">privacy policy</a>
+        <a href="#">terms & conditions</a>
+        <a href="#">disclaimer</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>pages</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      copyright <span>©</span> 2025 <a href="#">Afinaar</a>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html><style>*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background:#fff;
+}
+
+header{
+  background: #ffd6d6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  padding: 26px;
+  box-shadow: 0px 0px 10px rgb(3 17 15);
+  z-index: 100;
+}
+
+.logo{
+  color:#0ef;
+  font-size: 39px;
+  text-decoration: none;
+}
+
+.menu-icon{
+  font-size: 30px;
+  color:#343;
+  cursor: pointer;
+  display: none;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color:#343;
+  font-size: 17px;
+}
+
+footer {
+      background-color: #ffd6d6;
+      padding: 40px 20px;
+      text-align: center;
+      
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: left;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-column {
+      margin: 10px;
+      min-width: 200px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    
+
+    .footer-column h3 {
+      text-transform: lowercase;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .footer-column p,
+    .footer-column a {
+      color: #333;
+      text-decoration: none;
+      margin: 6px 0;
+      display: block;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      font-size: 16px;
+      color: #333;
+    }
+section{
+  
+  margin-top: 40px;
+  text-align: center;
+}
+section p{
+  font-size: 12px;
+  
+}
+hero .container{
+  background: transparent;
+  margin-top: 50px;
+}
+
+hero h2{
+  margin-left: 70px;
+  font-weight: 600px;
+}
+
+hero p{
+  margin-left: 70px;
+}
+.form{
+  background:#ffd6d6;
+  width: auto;
+  text-align: center;
+}
+
+input{
+ background: transparent;
+ padding: 8px;
+ width: 340px;  
+ border-radius: 20px;
+ margin: 20px;
+ border: solid;
+ color:#0ef;
+ outline: none;
+}
+
+textarea{
+ background: transparent;
+ padding: 30px;
+ width: 340px;  
+ border-radius: 20px;
+ margin: 20px;
+ border: solid;
+ color:#0ef;
+ outline: none;
+}
+
+button{
+  background:#0ef;
+  width: 74px;
+  padding: 4px;
+  border-radius: 20px;
+  border: solid;
+  color:#ff005e;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    position: absolute;
+    top: 84px;
+    right: 0;
+    background: #ffd6d6;
+    width: 386px;
+    padding: 40px 40px;
+    display: none;
+  }
+ 
+ .menu-icon{
+   display: block;
+ }
+ }   
+ 
+
+   
+.animate{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#ffd6d6;
+  animation: show-right 2s ease-out forwards;
+  
+  
+}
+
+@keyframes show-right {
+  100% {
+    width: 0;
+  }
+   </style><script><script src="script.js"></script>
+<script>
+function toggleMenu() {
+  var nav = document.getElementById("nav");
+  if ( nav.style.display ==="flex") {
+    nav.style.display ="none";
+  } else{
+  nav.style.display ="flex";
+}
+}
+const wallets = {
+        "Payeer": "P12345678",
+        "Trust Wallet": "0xABCDEF123456...",
+        "TRON": "TX123ABC456DEF...",
+        "EVC Plus": "0612345678",
+        "ZAAD": "0612345678",
+        "SAHAL": "0612345678"
+    };
+
+    function calculateAmount() {
+        const amount = parseFloat(document.getElementById("amount").value);
+        if (!isNaN(amount)) {
+            const fee = amount * 0.05;
+            const receive = amount - fee;
+            document.getElementById("summaryBox").innerHTML =
+                `<strong>Waxaad helaysaa:</strong> $${receive.toFixed(2)}<br><strong>Fee laga jaray:</strong> $${fee.toFixed(2)}`;
+        } else {
+            document.getElementById("summaryBox").innerHTML = "";
+        }
+    }
+
+    document.getElementById("amount").addEventListener("input", calculateAmount);
+
+    function goToStep2() {
+        const from = document.getElementById("fromMethod").value;
+        const to = document.getElementById("toMethod").value;
+        const phone = document.getElementById("receiverPhone").value;
+        const amount = parseFloat(document.getElementById("amount").value);
+        if (!from || !to || !phone || isNaN(amount)) {
+            alert("Fadlan buuxi dhammaan xogta.");
+            return;
+        }
+
+        const fee = amount * 0.05;
+        const receive = amount - fee;
+
+        document.getElementById("step1").style.display = "none";
+        document.getElementById("step2").style.display = "block";
+
+        document.getElementById("showFrom").innerText = from;
+        document.getElementById("showTo").innerText = to;
+        document.getElementById("confirmPhone").innerText = phone;
+        document.getElementById("confirmReceive").innerText = receive.toFixed(2);
+        document.getElementById("walletAddress").innerText = wallets[from] || "Unknown";
+    }
+
+    function submitExchange() {
+        const from = document.getElementById("fromMethod").value;
+        const to = document.getElementById("toMethod").value;
+        const phone = document.getElementById("receiverPhone").value;
+        const amount = parseFloat(document.getElementById("amount").value);
+        const email = document.getElementById("userEmail").value;
+        const sender = document.getElementById("senderPhone").value;
+
+        if (!email || !sender) {
+            alert("Fadlan buuxi email iyo lambarka aad lacagta ka dirtay.");
+            return;
+        }
+
+        const fee = amount * 0.05;
+        const receive = amount - fee;
+
+        const message = `🔁 Exchange Request:
+From: ${from}
+To: ${to}
+Receiver: ${phone}
+Amount: $${amount.toFixed(2)}
+Fee: $${fee.toFixed(2)}
+Receive: $${receive.toFixed(2)}
+Email: ${email}
+Sender Phone: ${sender}`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappNumber = "252610123456"; // ← Ku beddel nambarkaaga saxda ah
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        // WhatsApp toos u fur
+        window.open(whatsappURL, '_blank');
+    }
+</script></script>
